@@ -21,7 +21,7 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   // ignore: prefer_final_fields
-  late List<bool> _isOpen = [false, false, false];
+  late List<bool> _isOpen = [false, false];
   var formKeyDadosLogin = GlobalKey<FormState>();
   var formKeyDadosPessoais = GlobalKey<FormState>();
   var formkeyEndereco = GlobalKey<FormState>();
@@ -259,9 +259,9 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     ExpansionPanelList(
-                        expansionCallback: (i, isOpen) {
+                        expansionCallback: (index, isOpen) {
                           setState(() {
-                            _isOpen[i] = isOpen;
+                            _isOpen[index] = isOpen;
                           });
                         },
                         children: [
@@ -280,8 +280,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         color: _isOpen[0]
-                                            ? const Color.fromRGBO(
-                                                60, 120, 62, 50)
+                                            ? const Color.fromRGBO(60, 120, 62, 1)
                                             : Colors.black12,
                                       ),
                                       child: const Center(
@@ -485,8 +484,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       decoration: BoxDecoration(
                                         shape: BoxShape.circle,
                                         color: _isOpen[1]
-                                            ? const Color.fromRGBO(
-                                                60, 120, 62, 50)
+                                            ? const Color.fromRGBO(60, 120, 62, 1)
                                             : Colors.black12,
                                       ),
                                       child: const Center(
@@ -711,6 +709,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           },
                           style: ElevatedButton.styleFrom(
                               backgroundColor: const Color.fromRGBO(60, 122, 59, 1),
+                              foregroundColor: Colors.white,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20))),
                           child: const Row(

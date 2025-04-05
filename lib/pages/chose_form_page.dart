@@ -85,6 +85,7 @@ class _ChoseFormPageState extends State<ChoseFormPage> {
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
                               backgroundColor: const Color.fromRGBO(60, 122, 59, 1),
+                              foregroundColor: Colors.white,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20))),
                           onPressed: () {
@@ -109,8 +110,8 @@ class _ChoseFormPageState extends State<ChoseFormPage> {
                             horizontal: 30.0, vertical: 18.0),
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
-                              backgroundColor:
-                                  const Color.fromRGBO(60, 122, 59, 1),
+                              backgroundColor:const Color.fromRGBO(60, 122, 59, 1),
+                              foregroundColor: Colors.white,
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20))),
                           onPressed: () {

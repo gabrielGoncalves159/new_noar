@@ -265,8 +265,8 @@ class _RegisterPageDadosPessoaisState extends State<RegisterPageDadosPessoais>
                                   ),
                                   ElevatedButton(
                                     style: ElevatedButton.styleFrom(
-                                        backgroundColor:
-                                            const Color.fromRGBO(60, 122, 59, 1),
+                                        backgroundColor:const Color.fromRGBO(60, 122, 59, 1),
+                                        foregroundColor: Colors.white,
                                         shape: RoundedRectangleBorder(
                                             borderRadius:
                                                 BorderRadius.circular(20))),

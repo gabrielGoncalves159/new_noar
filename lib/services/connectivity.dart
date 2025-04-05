@@ -12,7 +12,7 @@ class Connection extends ChangeNotifier {
     late ConnectivityResult result;
 
     try {
-      result = await _connectivity.checkConnectivity();
+      result = (await _connectivity.checkConnectivity()) as ConnectivityResult;
 
       if(result == ConnectivityResult.none) {
         context.read<Notificacao>().notificarConexao(context);

@@ -43,9 +43,11 @@ class _RegisterPageRecuperacaoSenhaState
       await context
           .read<CadastrarUsuarioService>()
           .registrar(email.text, senha.text, dados, enderco);
+
       context
           .read<Notificacao>()
           .notificarSucesso(context, 'Cadastrado com sucesso!');
+
       setState(() {
         loading = false;
       });
@@ -233,6 +235,7 @@ class _RegisterPageRecuperacaoSenhaState
                                     child: ElevatedButton(
                                       style: ElevatedButton.styleFrom(
                                           backgroundColor: const Color.fromRGBO(60, 122, 59, 1),
+                                          foregroundColor: Colors.white,
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
                                                   BorderRadius.circular(20))),

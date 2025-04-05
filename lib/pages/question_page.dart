@@ -275,8 +275,8 @@ class _QuestionPageState extends State<QuestionPage> {
                                     const EdgeInsets.symmetric(vertical: 8.0),
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                      backgroundColor:
-                                          const Color.fromRGBO(60, 122, 59, 1),
+                                      backgroundColor: const Color.fromRGBO(60, 122, 59, 1),
+                                      foregroundColor: Colors.white,
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(20))),
@@ -302,8 +302,8 @@ class _QuestionPageState extends State<QuestionPage> {
                                     top: 20.0, bottom: 10.0),
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                      backgroundColor:
-                                          const Color.fromRGBO(60, 122, 59, 1),
+                                      backgroundColor:const Color.fromRGBO(60, 122, 59, 1),
+                                      foregroundColor: Colors.white,
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(20))),
@@ -330,8 +330,8 @@ class _QuestionPageState extends State<QuestionPage> {
                                 ),
                                 child: ElevatedButton(
                                   style: ElevatedButton.styleFrom(
-                                      backgroundColor:
-                                          const Color.fromRGBO(60, 122, 59, 1),
+                                      backgroundColor:const Color.fromRGBO(60, 122, 59, 1),
+                                      foregroundColor: Colors.white,
                                       shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(20))),

@@ -34,7 +34,7 @@ class _InicialPageState extends State<InicialPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(60, 120, 62, 50),
+      backgroundColor: const Color.fromARGB(255, 69, 129, 71),
       body: Stack(
         children: [
           Center(

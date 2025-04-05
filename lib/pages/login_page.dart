@@ -144,8 +144,8 @@ class _LoginPageState extends State<LoginPage> {
                                         horizontal: 18.0, vertical: 18.0),
                                     child: ElevatedButton(
                                       style: ElevatedButton.styleFrom(
-                                          backgroundColor: const Color.fromRGBO(
-                                              60, 122, 59, 1),
+                                          backgroundColor: const Color.fromRGBO(60, 122, 59, 1),
+                                          foregroundColor: Colors.white,
                                           shape: RoundedRectangleBorder(
                                               borderRadius:
                                                   BorderRadius.circular(20))),
@@ -180,7 +180,9 @@ class _LoginPageState extends State<LoginPage> {
                                                   child: Text(
                                                     actionButton,
                                                     style: const TextStyle(
-                                                        fontSize: 20),
+                                                        fontSize: 20,
+                                                        color: Colors.white,
+                                                    ),
                                                   ),
                                                 )
                                               ],
