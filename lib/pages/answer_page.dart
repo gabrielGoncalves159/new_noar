@@ -85,7 +85,7 @@ class _AnswerPageState extends State<AnswerPage> {
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
                         backgroundColor: const Color.fromRGBO(60, 122, 59, 1),
-                        foregroundColor: Color.white,
+                        foregroundColor: Colors.white,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20))),
                     onPressed: () {
